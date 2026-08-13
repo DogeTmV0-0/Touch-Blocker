@@ -1,0 +1,31 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+*.aar
+
+# Gradle build output — regenerated every build, shouldn't be in git
+/build/
+/app/build/
+.gradle/
+
+# Local machine config — points at YOUR local SDK path, never portable
+local.properties
+
+# IDE files
+.idea/
+*.iml
+.DS_Store
+
+# Keystores — never commit signing keys
+*.jks
+*.keystore
+
+# IMPORTANT: do NOT ignore the Gradle wrapper.
+# gradlew, gradlew.bat, and gradle/wrapper/gradle-wrapper.jar must stay
+# committed — GitHub Actions (and anyone else cloning this repo) needs them
+# to build without a separately installed Gradle. Some generic templates
+# exclude gradle-wrapper.jar by mistake; this project deliberately does not.
+!gradle/wrapper/gradle-wrapper.jar
+!gradlew
+!gradlew.bat
