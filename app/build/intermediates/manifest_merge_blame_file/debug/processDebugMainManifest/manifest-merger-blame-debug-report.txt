@@ -1,0 +1,179 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.touchblocker"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Draw the dead-zone overlays on top of every other app -->
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:5:5-78
+12-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:5:22-75
+13
+14    <!-- Keep the blocking service alive -->
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:8:5-77
+15-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:8:22-74
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+16-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:9:5-89
+16-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:9:22-86
+17
+18    <!-- Restart blocking after reboot, if the user enabled that -->
+19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+19-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:12:5-81
+19-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:12:22-78
+20
+21    <!-- Optional: ask to be exempted from aggressive battery killing -->
+22    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+22-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:15:5-95
+22-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:15:22-92
+23
+24    <permission
+24-->[androidx.core:core:1.13.1] /root/.gradle/caches/9.3.0/transforms/bf89162ae3a323bacc1f2afbf831c8e8/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+25        android:name="com.example.touchblocker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.13.1] /root/.gradle/caches/9.3.0/transforms/bf89162ae3a323bacc1f2afbf831c8e8/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.13.1] /root/.gradle/caches/9.3.0/transforms/bf89162ae3a323bacc1f2afbf831c8e8/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.example.touchblocker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.13.1] /root/.gradle/caches/9.3.0/transforms/bf89162ae3a323bacc1f2afbf831c8e8/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.13.1] /root/.gradle/caches/9.3.0/transforms/bf89162ae3a323bacc1f2afbf831c8e8/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+29
+30    <application
+30-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:17:5-51:19
+31        android:allowBackup="true"
+31-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:18:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.13.1] /root/.gradle/caches/9.3.0/transforms/bf89162ae3a323bacc1f2afbf831c8e8/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:icon="@mipmap/ic_launcher"
+35-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:19:9-43
+36        android:label="@string/app_name"
+36-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:20:9-41
+37        android:supportsRtl="true"
+37-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:22:9-35
+38        android:testOnly="true"
+39        android:theme="@style/Theme.TouchBlocker" >
+39-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:21:9-50
+40        <activity
+40-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:24:9-32:20
+41            android:name="com.example.touchblocker.MainActivity"
+41-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:25:13-41
+42            android:configChanges="orientation|screenSize|screenLayout"
+42-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:27:13-72
+43            android:exported="true" >
+43-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:26:13-36
+44            <intent-filter>
+44-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:28:13-31:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:29:17-69
+45-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:29:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:30:17-77
+47-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:30:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <service
+51-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:34:9-41:19
+52            android:name="com.example.touchblocker.OverlayService"
+52-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:35:13-43
+53            android:exported="false"
+53-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:36:13-37
+54            android:foregroundServiceType="specialUse" >
+54-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:37:13-55
+55            <property
+55-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:38:13-40:85
+56                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+56-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:39:17-76
+57                android:value="Blocks touch input in user-defined screen regions" />
+57-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:40:17-82
+58        </service>
+59
+60        <receiver
+60-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:43:9-49:20
+61            android:name="com.example.touchblocker.BootReceiver"
+61-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:44:13-41
+62            android:exported="true" >
+62-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:45:13-36
+63            <intent-filter>
+63-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:46:13-48:29
+64                <action android:name="android.intent.action.BOOT_COMPLETED" />
+64-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:47:17-79
+64-->/home/doge/ProjectsAndShit/TouchBlocker/app/src/main/AndroidManifest.xml:47:25-76
+65            </intent-filter>
+66        </receiver>
+67
+68        <provider
+68-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/9.3.0/transforms/ce8979f83f245ab6adf93ff3a26bcc44/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+69            android:name="androidx.startup.InitializationProvider"
+69-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/9.3.0/transforms/ce8979f83f245ab6adf93ff3a26bcc44/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+70            android:authorities="com.example.touchblocker.androidx-startup"
+70-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/9.3.0/transforms/ce8979f83f245ab6adf93ff3a26bcc44/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+71            android:exported="false" >
+71-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/9.3.0/transforms/ce8979f83f245ab6adf93ff3a26bcc44/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+72            <meta-data
+72-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/9.3.0/transforms/ce8979f83f245ab6adf93ff3a26bcc44/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+73-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/9.3.0/transforms/ce8979f83f245ab6adf93ff3a26bcc44/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+74                android:value="androidx.startup" />
+74-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/9.3.0/transforms/ce8979f83f245ab6adf93ff3a26bcc44/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+75            <meta-data
+75-->[androidx.lifecycle:lifecycle-process:2.6.2] /root/.gradle/caches/9.3.0/transforms/b015e9117a427d5fdfe7058c53c00844/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+76-->[androidx.lifecycle:lifecycle-process:2.6.2] /root/.gradle/caches/9.3.0/transforms/b015e9117a427d5fdfe7058c53c00844/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+77                android:value="androidx.startup" />
+77-->[androidx.lifecycle:lifecycle-process:2.6.2] /root/.gradle/caches/9.3.0/transforms/b015e9117a427d5fdfe7058c53c00844/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+78            <meta-data
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+79                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+80                android:value="androidx.startup" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+81        </provider>
+82
+83        <receiver
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+84            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+85            android:directBootAware="false"
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+86            android:enabled="true"
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+87            android:exported="true"
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+88            android:permission="android.permission.DUMP" >
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+90                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+93                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+96                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+99                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/9.3.0/transforms/52a3dfb2d9b829c4bcfa22c5b10065f7/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+100            </intent-filter>
+101        </receiver>
+102    </application>
+103
+104</manifest>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/root/.gradle/daemon/9.3.0/com.example.touchblocker.app-mergeDebugResources-3:/layout/item_zone.xml",
+        "source": "/root/.gradle/daemon/9.3.0/com.example.touchblocker.app-main-6:/layout/item_zone.xml"
+    },
+    {
+        "merged": "com.example.touchblocker.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.example.touchblocker.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/9.3.0/com.example.touchblocker.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "/root/.gradle/daemon/9.3.0/com.example.touchblocker.app-main-6:/layout/activity_main.xml"
+    }
+]

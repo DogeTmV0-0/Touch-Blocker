@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Touch Blocker</string>
+    <string name="notif_channel_name">Touch Blocking Active</string>
+    <string name="notif_title">Touch Blocker is active</string>
+    <string name="notif_text">Tap to open, or disable below.</string>
+    <string name="notif_text_paused">Paused — taps in your zones work normally.</string>
+    <string name="action_disable">Disable all zones</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="grant_overlay_permission">Grant "Display over other apps" permission</string>
+    <string name="add_zone">Add zone</string>
+    <string name="start_blocking">Start blocking</string>
+    <string name="stop_blocking">Stop blocking</string>
+    <string name="pause_blocking">Pause blocking</string>
+    <string name="resume_blocking">Resume blocking</string>
+    <string name="debug_show_zones">Show zone outlines (debug)</string>
+</resources>
